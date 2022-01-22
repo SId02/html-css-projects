@@ -1,0 +1,148 @@
+   /*  */
+   :root {
+    --light: #fff;
+    --grey: #f8f9fa;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    }
+/*  */
+/* global  */
+.main-bgcolor {
+      background-image: var(--gradient-color);
+}
+.light-color {
+color: var(--light) !important;
+}
+.grey-bgcolor {
+background: var(--grey);
+}
+.company_brand {
+font-size: x-large;
+font-family: cursive;
+}
+/* global ends */
+
+/* Navbar */
+ul li a:hover{
+border-bottom: 3px dashed whitesmoke ;
+}
+/* Navbar ends */
+/* Banner  */
+section {
+padding-top: 5%;
+}
+
+h1 {
+font-size: 40px;
+font-weight: 600;
+margin-top: 100px;
+text-transform: uppercase;
+}
+
+.watch-btn {
+margin: auto 20px;
+position: relative;
+top: 8px;
+}
+
+section a {
+text-decoration: none;
+}
+
+.wave-img {
+width: 100%;
+height: auto;
+}
+/* Banner ends */
+/* Services */
+.service-img {
+width: 200px;
+height: 200px;
+margin-top: 20px;
+}
+
+.service h4 {
+padding: 5px;
+margin-top: 25px;
+text-transform: uppercase;
+}
+
+.title {
+text-transform: uppercase;
+}
+
+.title::before {
+content: "";
+background: var(--gradient-color);
+height: 5px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+transform: translateY(60px);
+}
+
+.title::after {
+content: "";
+background:var(--gradient-color);
+height: 10px;
+width: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 40px;
+display: block;
+transform: translateY(14px);
+}
+
+section .btn-primary {
+box-shadow: none;
+padding: 8px 25px;
+border: none;
+}
+/* Services ends */
+/* About  */
+.about-title {
+margin-top: 8%;
+margin-bottom: 20px;
+}
+
+section ul li {
+margin: 10px 0;
+}
+
+section ul {
+padding-left: 23px;
+}
+/* About ends */
+/* Testimonials  */
+.testimonial {
+border-left: 4px solid #007bff;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.testimonial img {
+height: 60px;
+width: 60px;
+border-radius: 50%;
+margin: 0 10px;
+}
+
+.user-details {
+display: inline-block;
+font-size: 12px;
+}
+/* Testimonials ends */
+/* social-media  */
+.social-icons .sicons {
+width: 75px;
+transition: 0.5s;
+color: #201f1f17;
+}
+.social-icons  a:hover  .sicons{
+color:var(--gradient-color);
+transform: translateY(-10px);
+}
+a:hover {
+text-decoration: none;
+} 
+/* social-media ends */
