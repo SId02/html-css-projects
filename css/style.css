@@ -111,7 +111,8 @@ h3 {
 }
 
 .btn:hover {
-	background-color: var(--main-color);
+	border: none;
+	border-top: 3px solid var(--main-color);
 	transform: translateX(0);
 }
 
