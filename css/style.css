@@ -70,7 +70,7 @@ nav a:hover {
 .header-flex {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	min-height: calc(100vh - 100px);
 }
 
@@ -111,7 +111,8 @@ h3 {
 }
 
 .btn:hover {
-	background-color: var(--main-color);
+	border: none;
+	border-top: 3px solid var(--main-color);
 	transform: translateX(0);
 }
 
