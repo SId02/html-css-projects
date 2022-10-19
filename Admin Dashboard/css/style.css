@@ -1,0 +1,112 @@
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #eee;
+}
+
+/* Nav-Bar */
+
+.sidebar {
+	height: 100vh;
+	background: linear-gradient(rgba(17, 113, 128, 0.7), rgba(38, 154, 214, 0.9));
+	border-right: 2px solid #daa520;
+}
+
+.bottom-border {
+	border-bottom: 1px groove #ffffff;
+}
+
+.sidebar-link {
+	transition: all 0.3s;
+	padding: 0.7rem 1rem;
+	margin-bottom: 2px;
+}
+
+.sidebar-link:hover {
+	border: 3px #ff5125 solid;
+}
+
+.current {
+	background-color: #6a276f;
+	box-shadow: 2px 5px 10px #111;
+}
+
+.current:hover {
+	background-color: #d592df;
+	box-shadow: 2px 5px 20px #111;
+	transform: translateY(-1px);
+}
+
+.search-input {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid #999;
+	transition: all 0.3s;
+}
+
+.search-input:focus {
+	background: transparent;
+	box-shadow: none;
+	border-bottom: 2px solid #28d880;
+}
+
+.search-button {
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.search-button:hover {
+	background-color: #2bc0fc;
+	transform: translateY(-1px);
+}
+
+.icon-parent {
+	position: relative;
+}
+
+.icon-bullet::after {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: #28d880;
+	border-radius: 50%;
+	top: 8px;
+	left: 15px;
+}
+
+@media (min-width: 900px) {
+	.sidebar .nav-item a {
+		font-size: 0.95em;
+	}
+}
+
+@media (max-width: 768px) {
+	.sidebar {
+		position: static;
+		height: auto;
+	}
+
+	.top-navbar {
+		position: static;
+	}
+}
+
+/* End of Nav-Bar */
+
+/* Progress / Task List */
+
+.h-20 {
+	height: 20px;
+}
+
+.task-border {
+	border-left: 3px solid #0400ff;
+}
+
+/* End of Progress / Task List */
+
+/* Footer */
+
+
+/* Footer End*/
