@@ -25,53 +25,25 @@ a {
 	width: 1200px;
 }
 
-/* Navigiation  */
-nav {
-	background-color: #2e3538;
-	color: #fff;
-	padding: 10px 0;
-}
-
-nav .logo {
-	font-size: 24px;
-	font-weight: 600;
-	letter-spacing: 2px;
-}
-
-nav ul {
-	display: flex;
-	padding: 0;
-	list-style-type: none;
-}
-
-nav ul li {
-	margin-left: 25px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
-nav a:hover {
-	text-decoration: underline;
-}
-
-.nav-flex {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-/* Navbar Ends */
-
 /* Header Styles */
 
 .header-flex {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	min-height: calc(100vh - 100px);
+}
+
+.hcFrame,
+.uiClone {
+	padding: 32px;
+	border-block-end: 4px solid transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	position: relative;
+	background-color: #bbd2d9;
+	border-radius: 8px;
 }
 
 h1 {
@@ -111,7 +83,8 @@ h3 {
 }
 
 .btn:hover {
-	background-color: var(--main-color);
+	border: none;
+	border-bottom: 3px solid var(--main-color);
 	transform: translateX(0);
 }
 
@@ -143,7 +116,6 @@ h3 {
 	width: 100%;
 	max-width: 300px;
 	min-height: 100px;
-	background-color: var(--light-three);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -151,6 +123,8 @@ h3 {
 	padding: 3rem 2rem;
 	overflow: hidden;
 	transition: 0.3s;
+	background-color: #bbd2d9;
+	border-radius: 8px;
 }
 
 .card:before {
@@ -171,7 +145,6 @@ h3 {
 	height: 0px;
 	bottom: 0;
 	left: 0;
-	background-color: var(--main-color);
 	transition: 0.3s;
 }
 
@@ -218,10 +191,6 @@ footer a {
 /* Media Query */
 
 @media (max-width: 768px) {
-	nav .logo {
-		font-size: 20px;
-	}
-
 	.header-flex {
 		flex-wrap: wrap;
 	}
